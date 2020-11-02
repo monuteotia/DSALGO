@@ -1,0 +1,19 @@
+//find the max and min
+#include<stdio.h>
+main()
+{
+	int a[100],n,i,temp,max=-10000,min=10000;
+	printf("enter the size of array\n");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
+	for(i=0;i<n;i++)
+	{
+		if(max<=a[i])
+			max=a[i];
+		if(min>=a[i])
+			min=a[i];
+	}
+	printf("max=%d\n",max);
+	printf("min=%d\n",min);
+}
